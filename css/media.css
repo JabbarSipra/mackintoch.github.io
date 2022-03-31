@@ -1,0 +1,110 @@
+:root{
+     --main-color:darkorange;
+     --body-clr:#1a0061;
+     --heading-font:'Orbitron', sans-serif;
+     --gradient-footer: linear-gradient( -144deg, rgb(40,48,98) 5%, rgb(65,54,109) 35%, rgb(29,36,89) 65%, rgb(36,35,87) 95%);
+ }
+
+
+ @media only screen and (max-width:1200px){
+      .header{
+           gap: 2rem;
+      }
+ }
+ @media only screen and (max-width:1000px){
+     .header .right img{
+          width: 17rem;
+          transform: rotateY(180deg);
+      }
+      .menu i{
+          font-size: 2rem;
+          display: unset;
+        }
+        .navbar{
+             z-index: 9999;
+        }
+     .navbar .right{
+          position: absolute;
+          display: flex;
+          width: 60%;
+          text-align: center;
+          flex-direction: column;
+          gap: 2rem;
+          background: rgba(85, 85, 85, 0.219);
+          backdrop-filter:blur(6px);
+          padding: 3rem;
+          height: 100vh;
+          z-index: 666;
+          left: 0;
+          bottom: 0;
+          top: 100%;
+          transform: translateX(-50rem);
+          transition: .5s;
+     }
+     .navbar .right.active{
+          transform: translateX(0rem);
+     }
+     .navbar .right a{
+          font-size: 1.2rem;
+     }
+     .team-members{
+          padding: 0 2rem;
+        }
+        .faq-dta{
+          padding: 2rem 0;
+        }
+ }
+
+ @media only screen and (max-width:850px) {
+      .header{
+           flex-direction: column;
+           padding-top: 5rem;
+           height: auto;
+           padding-bottom: 2rem;
+           gap: 5rem;
+      }
+      .team-members{
+          padding: 0;
+        }
+     .team{
+          padding: 2rem;
+     }
+     .join{
+          padding: 2rem;
+     }
+     .faq{
+          padding: 2rem;
+     }
+     .our-nft{
+          padding: 2rem;
+     }
+     .header{
+          padding-left: 2rem ;
+          padding-right: 2rem;
+     }
+ }
+
+ @media only screen and (max-width:600px){
+     .team-member{
+          flex-direction: column;
+          border: 1px solid rgba(128, 128, 128, 0.419);
+          border-radius: 10px;
+          padding-top: 1rem ;
+     }
+     .header h1{
+          font-size: 2rem;
+      }
+      .container .content h2 {
+          font-size: 1rem;
+        }
+     .team-member .right h1{
+          font-size: 1.3rem;
+          text-align: center;
+        }
+        .join h1{
+          font-size: 1.3rem;
+        }
+        .navbar .right{
+             width: 100%;
+        }
+ }
